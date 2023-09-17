@@ -9,7 +9,7 @@
             "value": "ds310"
         },
         "name": {
-            "value": "extract-and-load"
+            "value": "ExtractAndLoad"
         },
         "version": {
             "value": "V2"
