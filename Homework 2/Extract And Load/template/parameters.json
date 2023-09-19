@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "subscription": {
-            "value": "e60a5797-73e9-4303-973f-d28f7b585fd0"
+            "value": "@subId"
         },
         "resourceGroup": {
             "value": "ds310"
         },
         "name": {
-            "value": "extract-and-load"
+            "value": "@dfName"
         },
         "version": {
             "value": "V2"
