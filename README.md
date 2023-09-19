@@ -19,7 +19,7 @@ Further, students will be exposed to recent developments in distributed data pro
 
 ### Homework Instructions
 1. In a web browser, sign into the [Azure portal](https://portal.azure.com) at `https://portal.azure.com`.
-2. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a ***PowerShell*** environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+2. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a ***PowerShell*** environment and creating storage if prompted. Select the subscription "Azure for Students" if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
 
     ![Azure portal with a cloud shell pane](./images/cloud-shell.png)
 
@@ -39,7 +39,13 @@ git clone https://github.com/cseferlis/ds310homework.git
 cd ds310homework
 ```
 
-6. Next go to the homework directory you want to work on and run the below command. Make sure you mention the right resource group name and the right template and parameter files.
+6. Next go to the `homework` directory you want to work on and run the below command. Run the bash script inside the homework folder using the following command, this will generate the template and parameter files for you.
+
+```[bash]
+bash ./formTemplate.sh
+```
+
+7. Make sure you mention the right resource group name and the right template and parameter files.
 
 ```[azure]
 az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
