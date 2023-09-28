@@ -2,27 +2,27 @@
 
 **Class,**
 
-I'll continue to work to get ahead of schedule on Homework, just remember the course changes as it is so new, thus leading to creating some of these activities on the fly.
+> **NOTE** - Homework3 is based on the homework2 (Extract And Load) assignment. You will be using the same `resource group` and `data-factory` you created for previous assignment. If you did not complete that assignment please reach out to TA Office Hours to start with this assignment.
 
-With that, I'm introducing Homework 3 - Transforming and Staging
-
-Building off of Homework 2 where you extracted and loaded a data file into your storage account. Using the reference document for Homework 3 where all datatypes and fields are listed, you will need to use your existing Data Factory, and add a new activity for loading the data from the .txt file into a SQL Server Database Table you create.
+Building off of Homework 2 where you extracted and loaded a data file into your storage account. Using the [reference document](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf) where all datatypes and fields are listed, for Homework 3, you will need to use your existing Data Factory, and add a new activity for loading the data from the .txt file into a SQL Server Database Table you create.
 
 You will need to use Azure Data Factory to:
 
 - Convert the datatype from text to date for the "DateA" column (Transform)
-- Then import the data into a "<initials>Complaints" database into the SQL Server you will create using the following instructions:
+- Then import the data into a "<initials>Complaints" database into the SQL Server you will be creating using the following instructions:
+
+  > **NOTE** - If you have used the _`bash fromTemplate.sh`_ script for current homework to create your sql server, you can skip these steps for creating the server and database. You will still need to create the table and load the data into the table.
 
   Next, create an Azure SQL Server with Sample database included:
   
   Read the instructions fully first: [https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal)
   
   - Use the Resource Group you just created for Homework 2
-  - Use `<initials>DS310db` for the database name for step 5
+  - Use `<initials>DS310db` for the database name for step 5 (`<initials>` will be random if you used the script)
   - For Step 6
     - Use EastUS2 for Region
-    - Use `<first initial><last name>` for the user account (make sure you keep track of your password)
-    - Use `<initials>ds310server` for the server name (Has to be all lower case)
+    - Use `<first initial><last name>` for the user account (make sure you keep track of your password) (LoginId will be `ds310admin` if you used the script and Password will be `ds310password013!`)
+    - Use `<initials>ds310server` for the server name (Has to be all lower case) (Server name will start with `db<random-string>` if you used the script)
   - Select "Development" for Workload Environment
   - Select "Configure database" next to Compute and Storage
     - Use the Standard Tier (S0) with 10 DTU and 250 GB storage for Service Tier
@@ -33,7 +33,7 @@ You will need to use Azure Data Factory to:
   - After you create the database, it may take 5-10 minutes to complete deployment
   - Continue with instructions through running a query
 
-You will need to use the Reference file below for setting up the new table attributes (columns) with the appropriate datatypes. For best results, I typically use NVARCHAR as my datatype to be able to handle Unicode and any strange characters that might show up in the data.
+You will need to use the Reference (`Complaints Reference File`) file below for setting up the new table attributes (columns) with the appropriate datatypes. For best results, I typically use NVARCHAR as my datatype to be able to handle Unicode and any strange characters that might show up in the data.
 
 After your database is up and running, I want you to run the following query, output the results to a file and save the file as a PDF for submission.
 
@@ -52,9 +52,8 @@ Here are a few reference documents that will help:
 - [Information page for Complaints data](https://www.nhtsa.gov/nhtsa-datasets-and-apis#complaints)
 - [Complaints Data File](https://static.nhtsa.gov/odi/ffdd/cmpl/FLAT_CMPL.zip)
 - [Complaints Reference File](https://static.nhtsa.gov/odi/ffdd/cmpl/Import_Instructions_Excel_All.pdf)
-
-
-Feel free to adjust the Markdown code according to your needs or formatting preferences.
+- [Copy Tool](https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview)
+- [Data Flow](https://docs.microsoft.com/en-us/azure/data-factory/concepts-data-flow-overview)
 
 ## Using Template
 

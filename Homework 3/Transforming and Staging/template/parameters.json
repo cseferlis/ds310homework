@@ -6,7 +6,7 @@
             "value": "SQL_Latin1_General_CP1_CI_AS"
         },
         "databaseName": {
-            "value": "transform-and-staging"
+            "value": "@dbName"
         },
         "tier": {
             "value": "Standard"
@@ -24,7 +24,7 @@
             "value": "AdventureWorksLT"
         },
         "serverName": {
-            "value": "transform-and-staging"
+            "value": "@dbServerName"
         },
         "licenseType": {
             "value": ""
@@ -192,7 +192,7 @@
             "value": "ds310admin"
         },
         "administratorLoginPassword": {
-            "value": null
+            "value": "ds310password013!"
         },
         "identity": {
             "value": {
