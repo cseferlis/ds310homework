@@ -8,40 +8,39 @@ Building off of Homework 2 where you extracted and loaded a data file into your 
 
 You will need to use Azure Data Factory to:
 
-- Convert the datatype from text to date for the "DateA" column (Transform)
-- Then import the data into a "<initials>Complaints" database into the SQL Server you will be creating using the following instructions:
+1. Convert the datatype from text to date for the "DateA" column (Transform)
+2. Then import the data into a "<initials>Complaints" database into the SQL Server you will be creating using the following instructions:
+    > **NOTE** - If you have used the _`bash fromTemplate.sh`_ script for current homework to create your sql server, you can skip these steps for creating the server and database and start from **step 3**. You will still need to create the table and load the data into the table.
 
-  > **NOTE** - If you have used the _`bash fromTemplate.sh`_ script for current homework to create your sql server, you can skip these steps for creating the server and database. You will still need to create the table and load the data into the table.
+    Next, create an Azure SQL Server with Sample database included:
 
-  Next, create an Azure SQL Server with Sample database included:
-  
-  Read the instructions fully first: [https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal)
-  
-  - Use the Resource Group you just created for Homework 2
-  - Use `<initials>DS310db` for the database name for step 5 (`<initials>` will be random if you used the script)
-  - For Step 6
-    - Use EastUS2 for Region
-    - Use `<first initial><last name>` for the user account (make sure you keep track of your password) (LoginId will be `ds310admin` if you used the script and Password will be `ds310password013!`)
-    - Use `<initials>ds310server` for the server name (Has to be all lower case) (Server name will start with `db<random-string>` if you used the script)
-  - Select "Development" for Workload Environment
-  - Select "Configure database" next to Compute and Storage
-    - Use the Standard Tier (S0) with 10 DTU and 250 GB storage for Service Tier
-    - The cost should be listed as $14.72/mo - if this doesn't match, you missed something
-  - Select "Locally Redundant Storage" for backup storage redundancy option prior to the networking step
-  - Select "Yes" for both options under firewall rules in step 13 (instructions are no, then yes, we want yes for both)
-  - Do not opt for the free trial in step 16
-  - After you create the database, it may take 5-10 minutes to complete deployment
-  - Continue with instructions through running a query
+    Read the instructions fully first: [https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) 
+    
+    - Use the Resource Group you just created for Homework 2
+    - Use `<initials>DS310db` for the database name for step 5 (`<initials>` will be random if you used the script)
+    - For Step 6
+      - Use EastUS2 for Region
+      - Use `<first initial><last name>` for the user account (make sure you keep track of your password) (LoginId will be `ds310admin` if you used the script and Password will be `ds310password013!`)
+      - Use `<initials>ds310server` for the server name (Has to be all lower case) (Server name will start with `db<random-string>` if you used the script)
+    - Select "Development" for Workload Environment
+    - Select "Configure database" next to Compute and Storage
+      - Use the Standard Tier (S0) with 10 DTU and 250 GB storage for Service Tier
+      - The cost should be listed as $14.72/mo - if this doesn't match, you missed something
+    - Select "Locally Redundant Storage" for backup storage redundancy option prior to the networking step
+    - Select "Yes" for both options under firewall rules in step 13 (instructions are no, then yes, we want yes for both)
+    - Do not opt for the free trial in step 16
+    - After you create the database, it may take 5-10 minutes to complete deployment
+    - Continue with instructions through running a query
 
-You will need to use the Reference (`Complaints Reference File`) file below for setting up the new table attributes (columns) with the appropriate datatypes. For best results, I typically use NVARCHAR as my datatype to be able to handle Unicode and any strange characters that might show up in the data.
+3. You will need to use the Reference (`Complaints Reference File`) file below for setting up the new table attributes (columns) with the appropriate datatypes. For best results, I typically use NVARCHAR as my datatype to be able to handle Unicode and any strange characters that might show up in the data.
 
-After your database is up and running, I want you to run the following query, output the results to a file and save the file as a PDF for submission.
+4. After your database is up and running, I want you to run the following query, output the results to a file and save the file as a PDF for submission.
 
-```sql
-SELECT *
-FROM cbsComplaints
-WHERE CONVERT(Date, DATEA) = CONVERT(Date, GETDATE() - 1)
-```
+    ```sql
+    SELECT *
+    FROM cbsComplaints
+    WHERE CONVERT(Date, DATEA) = CONVERT(Date, GETDATE() - 1)
+    ```
 
 Here are a few reference documents that will help:
 
