@@ -54,6 +54,14 @@ Here are a few reference documents that will help:
 - [Copy Tool](https://docs.microsoft.com/en-us/azure/data-factory/copy-activity-overview)
 - [Data Flow](https://docs.microsoft.com/en-us/azure/data-factory/concepts-data-flow-overview)
 
+## Think Loud On Below Points 🤔
+- How to use `Complaints Reference File` to create a table in Azure SQL Database?
+- How to use `Copy Tool` to load data from Azure Storage to Azure SQL Database?
+- What if you have a row with a `missing value` in the middle of the file?
+- What if the `header column` name is different from the column name in the table?
+- What is the `current format` of the file? What is the `delemiter`? How `many columns` are there?
+- How to `map` columns in the file to columns in the table? How to change the data type of a column(s)?
+
 ## Using Template
 
 ```azurecli-interactive
