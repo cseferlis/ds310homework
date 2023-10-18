@@ -39,7 +39,7 @@ You will need to use Azure to:
 
   If you get this, then everything you have done so far is correct.
 
-- Now modify the above query to find movies which were produced by **"Dentsu"** production company, output the results to a file and save the file as a PDF for submission. 
+- Now modify the above query to find movies which were produced by **"Dentsu"** production company, capture a screenshot of the output of both queries INCLUDING YOUR ACCOUNT IN THE TOP RIGHT of the window.
 
 
 As questions arise, remember to post questions here in Piazza and work together to find the solutions. 
