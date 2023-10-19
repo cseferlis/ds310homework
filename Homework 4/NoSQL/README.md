@@ -19,14 +19,14 @@ You will need to use Azure to:
   - To deploy the CosmosDB, use the following tutorial: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal Note, do not clean up the resources in the last step, as we want the database to stick around.
   - IN ORDER TO CONTROL COSTS, Alternatively, run the template from this repo using:
       ```sh
-      bash formtemplate.sh
+      bash ./formtemplate.sh
       ```
       ```
       az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
       ```
 - Create a container with Database id as "ds310" in your CosmosDB and Container id called "movies". Set Database Throughput as Manual and set it 400 RU/s. For paritionId, use the value "status". 
 - Then import the data into the "movies" container.
-- Finally, you will do some sample querying using SQL for querying the data in your container using this tutorial: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-query 
+- Finally, you will do some sample querying using SQL for querying the data in your container using this tutorial: [https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-query](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/tutorial-query) 
 
 - After your database is up and running, I want you to run the following query.
 
