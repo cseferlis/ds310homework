@@ -19,25 +19,25 @@ In the tutorial, pay attention to the following custom settings to prevent cost 
 
 1. **Image Selection**: Choose the Windows image recommended in the tutorial.
 
-    ![Image Selection](../images/hw5-img1.png)
+    ![Image Selection](../../images/hw5-img1.png)
 
 2. **Virtual Machine Size**: Select "Standard_D2s_v3" for your virtual machine size.
 
-    ![VM Size](../images/hw5-img2.png)
+    ![VM Size](../../images/hw5-img2.png)
 
 3. **Licensing**: Choose the option stating that you have a license for trial purposes.
 
-    ![Licensing](../images/hw5-img3.png)
+    ![Licensing](../../images/hw5-img3.png)
 
 4. **Disks**: Select "Standard HDD" for disk type.
 
-    ![Disks](../images/hw5-img4.png)
+    ![Disks](../../images/hw5-img4.png)
 
 5. Leave the default settings for Networking, Management, Monitoring, and Advanced tabs.
 
 6. On the "SQL Server Settings" tab, confirm that you have a license.
 
-    ![SQL Server Settings](../images/hw5-img5.png)
+    ![SQL Server Settings](../../images/hw5-img5.png)
 
 7. Review your selections and proceed with VM creation.
 
@@ -60,9 +60,9 @@ After connecting to your VM, perform the following actions:
 
 3. **Disable IE Enhanced Security Configuration**: In the Virtual Machine's "Server Manager," turn off Internet Explorer Enhanced Security Configuration under "local server."
 
-    ![IE Enhanced Security Configuration](../images/hw5-img6.png)
+    ![IE Enhanced Security Configuration](../../images/hw5-img6.png)
 
-    ![IE Enhanced Security Configuration](../images/hw5-img7.png)
+    ![IE Enhanced Security Configuration](../../images/hw5-img7.png)
 
 ## Step 4: Install Power BI Desktop
 
