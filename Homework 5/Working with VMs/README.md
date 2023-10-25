@@ -1,4 +1,4 @@
-# Homework 6 - Working with Virtual Machines
+# Homework 5 - Working with Virtual Machines
 
 This guide will walk you through the process of setting up a Windows Virtual Machine (VM) in the Azure cloud. This VM will serve as your environment for working with NoSQL databases using Cosmos and the NoSQL API. Please read through the entire guide before deployment to avoid any cost overruns. Incorrect steps may lead to charges beyond your Azure allowance.
 
