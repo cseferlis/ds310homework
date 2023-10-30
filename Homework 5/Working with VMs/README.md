@@ -11,6 +11,12 @@ Before you begin, make sure you have the following:
 
 ## Step 1: Create a Windows VM
 
+> NOTE: If you don't want to manually configure the VM by yourself, use the `az` command using the `template.json` and `parameters.json` files provided in the template directory and jump onto Step 2. Also, this time you don't need to run the `formTemplate.sh` script
+
+```
+az deployment group create --resource-group <resource-group-name> --template-file <path-to-template.json> --parameters @<path-to-parameters.json>
+```
+
 Follow the Microsoft Learn tutorial "Quickstart - Create a Windows VM in the Azure portal" to create your VM. [Link to Tutorial](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal)
 
 ### Important Configuration Steps
@@ -25,7 +31,7 @@ In the tutorial, pay attention to the following custom settings to prevent cost 
 
     ![VM Size](../../images/hw5-img2.png)
 
-3. **Licensing**: Choose the option stating that you have a license for trial purposes.
+3. **Licensing**: Choose the option stating that you have a license for trial purposes. (If you don't see this step skip)
 
     ![Licensing](../../images/hw5-img3.png)
 
