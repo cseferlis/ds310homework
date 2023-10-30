@@ -54,6 +54,7 @@ In the tutorial, pay attention to the following custom settings to prevent cost 
 
 After successfully creating the VM, follow the tutorial's instructions for connecting to the virtual machine.
 
+If the template above was utilized for deployment, the username and password will be as follows:
 - adminUsername: **ds310admin**
 - adminPassword: **ds310password013!**
 
