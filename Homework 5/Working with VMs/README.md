@@ -33,7 +33,7 @@ In the tutorial, pay attention to the following custom settings to prevent cost 
 
     ![Disks](../../images/hw5-img4.png)
 
-5. Navigate to the 'Management' tab and enable the 'Auto-Shutdown' feature.
+5. **Management**: Enable the 'Auto-Shutdown' feature.
     ![Auto_Shutdown](../../images/hw5-img4-5.png) 
    
 7. Leave the default settings for Networking, Monitoring, and Advanced tabs.
@@ -48,12 +48,13 @@ In the tutorial, pay attention to the following custom settings to prevent cost 
 
 After successfully creating the VM, follow the tutorial's instructions for connecting to the virtual machine.
 
-- adminUsername: "ds310admin"; adminPassword: "ds310password013!"
+- adminUsername: **ds310admin**
+- adminPassword: **ds310password013!**
 
 ### Note:
 
 - If you're on the BU network, use a VPN connection as port 3389 is blocked on the BU network.
-- Alternatively, if you prefer using the BU network, refer to this YouTube video for guidance. Please remember that we'll be using port 3100 instead of the 5432 as demonstrated in the video: https://www.youtube.com/watch?v=5_24GbLbOK4
+- Alternatively, if you prefer using the BU network, refer to this YouTube video for guidance. Please remember that we'll be using port 3100 instead of the 5432 as demonstrated in the video: [Link](https://www.youtube.com/watch?v=5_24GbLbOK4)
 - Mac users should install the "Remote Desktop application from the Apple Store" for connecting. [Link](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466?mt=12)
 
 ## Step 3: Important Post-Configuration Steps
