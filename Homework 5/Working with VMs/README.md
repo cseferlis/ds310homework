@@ -81,6 +81,11 @@ After connecting to your VM, perform the following actions:
 ## Step 4: Install Power BI Desktop
 
 Download and install Power BI Desktop (x64) on your VM using your BU email for a trial of the software. You can download it [here](https://powerbi.microsoft.com/en-us/desktop/).
+Once you have your **Power BI** running you have to follow below steps:
+1. Sign In to your Power BI using BU account.
+2. Connect with your `Homework-3` Azure SQL Database using Power BI and Load the data of `Complaints` table. (Name can be different based on what you created)
+3. Create a rudimentary count function visual for the number of records in the table.
+4. Take the required screenshots as per the gradescope and you are done.
 
 ## Additional Notes
 
