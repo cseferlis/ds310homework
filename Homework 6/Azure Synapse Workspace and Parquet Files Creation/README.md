@@ -2,13 +2,13 @@
 
 ## Objective
 
-The main objective of this assignment is to create a Synapse Workspace and partition `.parquet` files by manufacturer name.
+Now, you will get started with Azure Synapse Analytics, the SQL Serverless pools using the MPP engine. To get started, you need to convert your source file (NHTSA Complaints File) to a format that can be used with the distributed system (synapse) and distributed dataset (sharding) by converting it to PARQUET format. This is meant to simulate the the preparation to have the file ready to connect to with Polybase for reading directly from the Data Lake. In HW7 we will next connect to the data as an external table. The main objective of this assignment is to create a Synapse Workspace and partition `.parquet` files by manufacturer name. 
 
 ## Tasks
 
 ### Upgrade your storage account
 
-To connect your Synapse to storage account, you need to upgrade it to ADLS Gen 2. To do so, enable Hierarchical namespace in your storage account (Found in overview, under Data Lake Storage heading)
+To connect your Synapse to a storage account, you need to upgrade it to ADLS Gen 2, as it is likely formatted as an incompatible setting. To do so, enable Hierarchical namespace in your storage account (Found in overview, under Data Lake Storage heading)
 
 ### Convert NHTSA TXT File to Parquet Format
 
@@ -30,7 +30,7 @@ You are required to perform the following steps using Azure Data Factory Data Fl
 Follow the steps below, referring to the Azure tutorial where necessary:
 
 1. **Set up the Synapse Workspace:**
-   - Tutorial: https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace (Quickstart: Get started - create a Synapse workspace - Azure Synapse Analytics | Microsoft Learn)
+   - Tutorial [https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace] (Quickstart: Get started - create a Synapse workspace - Azure Synapse Analytics | Microsoft Learn)
    - Do not use the sample data provided in the tutorial.
    - In the Data section of the Synapse workspace, add your storage account as a linked service if it is not already added.
    - Ensure to set up the primary storage account correctly (It should be ADLS Gen 2).
@@ -48,4 +48,5 @@ Your submission should include the following:
 2. **Directory or Storage Container View:**
    - Provide a view showing the partitioned `.parquet` files.
    - The partition names based on the manufacturer name should be visible.
-
+ Some additional help can be found here:
+   - https://learn.microsoft.com/en-us/azure/data-factory/tutorial-data-flow-write-to-lake
