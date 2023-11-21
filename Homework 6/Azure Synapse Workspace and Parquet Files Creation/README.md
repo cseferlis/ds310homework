@@ -30,7 +30,7 @@ You are required to perform the following steps using Azure Data Factory Data Fl
 Follow the steps below, referring to the Azure tutorial where necessary:
 
 1. **Set up the Synapse Workspace:**
-   - Tutorial [https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace](Quickstart: Get started - create a Synapse workspace - Azure Synapse Analytics | Microsoft Learn)
+   - Tutorial [https://learn.microsoft.com/en-us/azure/synapse-analytics/get-started-create-workspace (Quickstart: Get started - create a Synapse workspace - Azure Synapse Analytics | Microsoft Learn)
    - Do not use the sample data provided in the tutorial.
    - In the Data section of the Synapse workspace, add your storage account as a linked service if it is not already added.
    - Ensure to set up the primary storage account correctly (It should be ADLS Gen 2).
