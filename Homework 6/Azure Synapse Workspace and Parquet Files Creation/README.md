@@ -48,4 +48,5 @@ Your submission should include the following:
 2. **Directory or Storage Container View:**
    - Provide a view showing the partitioned `.parquet` files.
    - The partition names based on the manufacturer name should be visible.
-
+ Some additional help can be found here:
+   - https://learn.microsoft.com/en-us/azure/data-factory/tutorial-data-flow-write-to-lake
