@@ -1,4 +1,4 @@
-# Homework 8: Synapse SQL Script, External Table Creation, and Data Visualization
+# Homework 7: Synapse SQL Script, External Table Creation, and Data Visualization
 
 ## Objective
 Create an external table in Azure Synapse, utilize Synapse SQL scripts to read `.parquet` files, and visualize data.
