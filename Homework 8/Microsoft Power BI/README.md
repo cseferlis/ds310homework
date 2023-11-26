@@ -21,8 +21,7 @@
  
 - Configure **Folder Redirection** for Local Folder Access on Your VM 
   - Refer to this tutorial >> https://bowdoin.teamdynamix.com/TDClient/1814/Portal/KB/ArticleDet?ID=132977
-    - <img width="400" alt="1" src="./images/1.png">
-    - <img width="400" alt="2" src="./images/2.png">
+    - <img width="400" alt="1" src="./images/1.png"><img width="400" alt="2" src="./images/2.png">
 
 
 ### 3. Final Power BI Report Requirements
@@ -30,16 +29,16 @@
 ⭐️ **IMPORTANT: SINCE THE DATA IS RANDOMLY GENERATED, THE NUMBERS WILL DIFFER; HENCE, THE EMPHASIS SHOULD BE ON THE VISUAL ASPECTS AND THE COMPONENTS INCLUDED IN THESE VISUALS!!!** ⭐️
 
 - The final report should consist of four interactive pages (The layout should match the provided screenshot.):
-    - The first page - <span style="color: orange;">**Course Enrollment Costs by University**</span> data.
-        - <img width="400" alt="page1" src="./images/page1.png>
+    - The first page - <span style="color: orange;">**Course Enrollment Costs by University**</span> data
+        - <img width="400" alt="page2" src="./images/page1.png">
 
     - The second page - <span style="color: orange;">**Course Enrollment Counts by University**</span> data
         - <img width="400" alt="page2" src="./images/page2.png">
  
-    - The third page - <span style="color: orange;">**Student Demographics**</span> data.
+    - The third page - <span style="color: orange;">**Student Demographics**</span> data
         - <img width="400" alt="page3" src="./images/page3.png">
 
-    - The fourth page - <span style="color: orange;">**Professor Demographics**</span> data.
+    - The fourth page - <span style="color: orange;">**Professor Demographics**</span> data
         - <img width="400" alt="page4" src="./images/page4.png">
 
 
