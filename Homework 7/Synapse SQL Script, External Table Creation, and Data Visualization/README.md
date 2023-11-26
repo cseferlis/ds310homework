@@ -17,7 +17,7 @@ Create an external table in Azure Synapse, utilize Synapse SQL scripts to read `
 
 1. In Azure Synapse Studio, navigate to the ‘Data’ hub and locate the option to create an external table.
 
-2. Use the [Azure Synapse Analytics documentation](https://docs.microsoft.com/en-us/azure/synapse-analytics/sql/create-external-table) as a reference for the specific steps.
+2. Use the [Azure Synapse Analytics documentation](https://learn.microsoft.com/en-us/azure/synapse-analytics/sql/develop-tables-external-tables?tabs=hadoop) as a reference for the specific steps.
 
 3. Connect the external table to the NHTSA data in the `.parquet` file.
 
