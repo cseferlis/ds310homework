@@ -15,7 +15,7 @@
             "value": "V2"
         },
         "location": {
-            "value": "eastus"
+            "value": "eastus2"
         },
         "vNetEnabled": {
             "value": false
