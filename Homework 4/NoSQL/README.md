@@ -10,11 +10,11 @@ Read more about CosmosDB and its capabilities here: https://learn.microsoft.com/
 
 Building off of Homework 2 and 3 where you extracted and loaded a data file into your storage account. For Homework 4, we will use a different kind of database (NoSQL) to load and manipulate complex data with nested attributes.
 
-For this assignment, you will be grabbing the Kaggle TMDB dataset for 5000 movies (https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/). For the purpose of this assignment, we will use a cleaned version of that data that is hosted on: [https://data.koley.in/tmdb_5000_movies.json](https://data.koley.in/tmdb_5000_movies.json).
+For this assignment, you will be grabbing the Kaggle TMDB dataset for 5000 movies (https://www.kaggle.com/datasets/tmdb/tmdb-movie-metadata/). For the purpose of this assignment, we will use a cleaned version of that data that is hosted on: [https://data.koley.in/tmdb_5000_movies.json]([https://data.koley.in/tmdb_5000_movies.json](https://mod4.blob.core.windows.net/hw2/tmdb_5000_movies.json)).
 
 You will need to use Azure to:
 
-- Using Azure data factory, grab the file from the link [https://data.koley.in/tmdb_5000_movies.json](https://data.koley.in/tmdb_5000_movies.json)
+- Using Azure data factory, grab the file from the link [https://data.koley.in/tmdb_5000_movies.json]([https://data.koley.in/tmdb_5000_movies.json](https://mod4.blob.core.windows.net/hw2/tmdb_5000_movies.json))
 - Create a Azure CosmosDB database using the following instructions:
   - To deploy the CosmosDB, use the following tutorial: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal Note, do not clean up the resources in the last step, as we want the database to stick around.
   - IN ORDER TO CONTROL COSTS, Alternatively, run the template from this repo using:
